@@ -1,0 +1,340 @@
+body {
+  box-sizing: border-box;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:active, a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  background: #EBECEE;
+}
+
+.header {
+  display: flex;
+  padding: 0 20px;
+}
+
+.header__text {
+  padding-top: 60px;
+}
+
+.header__p-small {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+h1 {
+  padding-top: 20px;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 110%;
+  text-transform: uppercase;
+}
+
+.header__p-big {
+  padding-bottom: 40px;
+  font-weight: 700;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.header_blue {
+  color: #12A1F9;
+  padding-top: 15px;
+  padding-bottom: 40px;
+}
+
+.header_blue-text {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.btn {
+  max-width: 550px;
+  background: #12A1F9;
+  color: #fff;
+  margin-bottom: 100px;
+  padding: 25px 145px;
+  box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  text-transform: uppercase;
+  border: none;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 110%;
+  cursor: pointer;
+}
+
+.btn_disabled {
+  display: none;
+}
+
+.header__photo {
+  display: flex;
+  align-self: end;
+  filter: drop-shadow(0px 10px 40px rgba(0, 0, 0, 0.25));
+}
+
+.lesson {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 100px 0;
+}
+
+.lesson__card {
+  display: flex;
+  flex-direction: column;
+  max-width: 31.3%;
+}
+
+.lesson img {
+  margin: auto;
+}
+
+.lesson__title {
+  max-width: 330px;
+  font-weight: 700;
+  font-size: 22px;
+  text-align: center;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.lesson__subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+}
+
+h2 {
+  padding-bottom: 20px;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 110%;
+  text-transform: uppercase;
+}
+
+.section {
+  background: #EBECEE;
+  padding: 30px 0;
+}
+
+.auth {
+  display: flex;
+}
+
+.auth__card {
+  margin-left: 30px;
+}
+
+.auth__list {
+  display: flex;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  padding-bottom: 20px;
+}
+.auth__list img {
+  width: 30px;
+  height: 30px;
+  margin-right: 40px;
+}
+
+.button-tg {
+  display: flex;
+  justify-content: center;
+}
+.button-tg img {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+  margin-right: -65px;
+  z-index: 1;
+}
+
+.auth__big {
+  margin-top: 60px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 130%;
+  text-align: center;
+}
+
+.auth__small {
+  margin: 25px 0 50px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  text-align: center;
+}
+
+h3 {
+  max-width: 775px;
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 110%;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.practice {
+  display: flex;
+  padding: 50px 0 80px;
+}
+
+.practice__list {
+  display: flex;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  padding-bottom: 20px;
+}
+.practice__list img {
+  width: 30px;
+  height: 30px;
+  margin-right: 35px;
+}
+
+footer {
+  background: #E4E4E4;
+  padding: 34px 0 30px;
+}
+footer p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+.social img {
+  margin: 0 20px 20px 0;
+}
+
+@media (max-width: 1240px) {
+  h1 {
+    font-size: 40px;
+  }
+  .lesson {
+    padding: 40px;
+  }
+  .header__photo {
+    width: 400px;
+  }
+  .lesson__card {
+    max-width: 60%;
+    margin: auto;
+    padding-bottom: 40px;
+  }
+  .lesson__title {
+    padding: 15px 0;
+  }
+  h2, h3 {
+    font-size: 40px;
+  }
+  .practice {
+    flex-direction: column;
+    padding: 20px 0 30px;
+  }
+  .practice__card {
+    margin: auto;
+  }
+  .practice__img {
+    max-width: 70%;
+    margin: auto;
+  }
+}
+@media (max-width: 950px) {
+  h1, h2, h3 {
+    font-size: 35px;
+  }
+  .header__p-big {
+    font-size: 20px;
+  }
+  .header__p-small, .header_blue-text {
+    font-size: 16px;
+  }
+  .btn_enabled {
+    display: none;
+  }
+  .header__photo {
+    align-self: center;
+    width: 300px;
+  }
+  .header {
+    flex-direction: column;
+  }
+  .header__text {
+    text-align: center;
+  }
+  .btn_disabled {
+    display: block;
+    margin: auto;
+  }
+  .auth {
+    flex-direction: column-reverse;
+  }
+  .auth__img {
+    max-width: 70%;
+    margin: auto;
+  }
+}
+@media (max-width: 768px) {
+  h1, h2, h3 {
+    font-size: 30px;
+  }
+  .btn {
+    max-width: 300px;
+    padding: 25px;
+    margin-bottom: 30px;
+  }
+  .button-tg img {
+    display: none;
+  }
+  .auth__list img {
+    margin-right: 15px;
+  }
+  .auth__card {
+    margin: 0;
+    padding: 15px;
+  }
+  .practice__list {
+    padding: 20px;
+  }
+  .practice__list img {
+    margin-right: 15px;
+  }
+  .lesson img {
+    margin: auto;
+    max-width: 100%;
+  }
+  .section {
+    padding: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
